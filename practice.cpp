@@ -17,12 +17,17 @@ int getValueFromUser()
     return a;
 }
 
+int doubleNumber(int x)
+{
+    return x * 2;
+}
+
 int main()
 {
     int x = getValueFromUser();
-    int y = getValueFromUser();
+    int y = doubleNumber(x);
 
-    std::cout << x << " + " << y << " = " << x + y << std::endl;
+    std::cout << x << " doubled is: " << y << std::endl;
 
     return 0;
 }
